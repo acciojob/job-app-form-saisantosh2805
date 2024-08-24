@@ -3,11 +3,123 @@
 <html>
 
 <head>
+	<meta charset="utf-8">
+	<meta name ="viewport"content="width-device-width"initial-scale=1.0>
+	<title>job Applicaion Form</title>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+	  body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+ 
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+ 
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+ 
+form input[type="text"],
+form input[type="checkbox"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+ 
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+ 
+form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+ 
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+ 
+form select {
+  cursor: pointer;
+}
+ 
+form select option {
+  padding: 10px;
+}
+ 
+@media (max-width: 480px) {
+  form {
+    padding: 15px;
+  }
+ 
+  form input[type="submit"] {
+    font-size: 14px;
+  }
+}</style>
+	</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+    <form action="https://your-server-endpoint.com" method="POST" id="Job Applicaion Form">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+
+        <label for="name">Email*</label>
+        <input type="text" id="email" name="Email" placeholder="email" required>
+        
+        <label for="name">Gender*</label>
+                <label><input type="radio" id="female" name="gender" value="female" required> female</label>
+
+                <label><input type="radio" id="male" name="gender" value="male" required> male</label>
+                <label for="multiSelect">Laptop Brands*</label>
+      <select id="multiSelect">
+        <option>Apple</option>
+        <option>Asus</option>
+        <option>Hp</option>
+        </select>
+        
+        <label for="name">Age*</label>
+        <input type="text" id="age" name="age"required>
+		<label for="name">Date of Birth*</label>
+        <input type="text" id="dob" name="Date of Birth"required>
+		<label for="name">password*</label>
+        <input type="password" id="password" name="password"required>
+        
+    <a href="https://your-portfolio-url.com" target="_blank">URL input</a>
+
+ <input type="submit" value="Submit">        
+      </select>
+                
+                </form>
+               
+
     <script type="text/javascript" src="./script.js">
 </script>
 
