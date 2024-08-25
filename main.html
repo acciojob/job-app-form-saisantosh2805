@@ -5,77 +5,61 @@
     <title>Job Application Form</title>
 </head>
 <body>
-    <form action="submit-application" method="POST">
-        <h1>Job Application Form</h1>
 
-        <!-- Name -->
-        <label for="name">Name <span class="required-label">*</span></label>
-        <input type="text" id="name" name="name" required>
-        <br><br>
+<h1>Job Application Form</h1>
 
-        <!-- Email -->
-        <label for="email">Email <span class="required-label">*</span></label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
+<form action="submit-application" method="POST">
+    
+    <!-- Text Input -->
+    <label for="name">Name <span>*</span></label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <!-- Email Input -->
+    <label for="email">Email <span>*</span></label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    <!-- Password Input -->
+    <label for="password">Password <span>*</span></label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+    <!-- Number Input -->
+    <label for="age">Age <span>*</span></label>
+    <input type="number" id="age" name="age" required>
+    <br><br>
+    <!-- Date Input -->
+    <label for="dob">Date of Birth <span>*</span></label>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+    <!-- Radio Buttons -->
+    <label>Gender <span>*</span></label>
+        <br>
 
-        <!-- Gender -->
-        <div class="gender-group">
-            <label>Gender <span class="required-label">*</span></label><br>
-            <input type="radio" id="male" name="gender" value="male" required>
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label>
-        </div>
-        <br><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+    <br><br>
+    <!-- Dropdown Select -->
+    <label for="laptop">Preferred Laptop Brand <span>*</span></label>
+    <select id="laptop" name="laptop" required>
+        <option value="">Select a brand</option>
+        <option value="apple">Apple</option>
+        <option value="asus">Asus</option>
+        <option value="hp">HP</option>
+    </select>
+    <br><br>
+   
+    <label for="portfolio">Portfolio URL</label>
+    <input type="url" id="portfolio" name="portfolio">
+    <br><br>
+    
+    
+    <!-- Submit Button -->
+    <button type="submit">Submit Application</button>
 
-        <!-- Preferred Laptop Brand -->
-        <label for="laptop">Preferred Laptop Brand</label>
-        <select id="laptop" name="laptop">
-            <option value="apple">Apple</option>
-            <option value="asus">Asus</option>
-            <option value="hp">HP</option>
-        </select>
-        <br><br>
+</form>
 
-        <!-- Age -->
-        <label for="age">Age <span class="required-label">*</span></label>
-        <input type="number" id="age" name="age" required>
-        <br><br>
-
-        <!-- Date of Birth -->
-        <label for="dob">Date of Birth <span class="required-label">*</span></label>
-        <input type="date" id="dob" name="dob" required>
-        <br><br>
-
-        <!-- Phone Number -->
-        <label for="phone">Phone Number <span class="required-label">*</span></label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-        <br><br>
-
-        <!-- Password -->
-        <label for="password">Password <span class="required-label">*</span></label>
-        <input type="password" id="password" name="password" required>
-        <br><br>
-
-        <!-- Portfolio URL -->
-        <label for="portfolio">Portfolio URL</label>
-        <input type="url" id="portfolio" name="portfolio">
-        <br><br>
-
-        <!-- Terms and Conditions -->
-        <label for="terms">Agree to Terms and Conditions <span class="required-label">*</span></label>
-        <input type="checkbox" id="terms" name="terms" value="agree" required>
-        <br><br>
-
-        <!-- Comments -->
-        <label for="comments">Additional Comments</label>
-        <textarea id="comments" name="comments" rows="4"></textarea>
-        <br><br>
-
-        <!-- Submit Button -->
-        <button type="submit">Submit Application</button>
-    </form>
 </body>
 </html>
